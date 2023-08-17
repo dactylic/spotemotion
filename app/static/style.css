@@ -1,0 +1,110 @@
+.topnav {
+    background-color: #2C2C2C;
+    overflow: hidden;
+  }
+
+  /* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+color: #FFCB9A;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+body {
+    background-color: #1B1A1A;
+    }
+
+.container {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 2rem;
+    background-color: #2C2C2C;
+    color: #FFCB9A;
+    border: none;
+    max-width: 36rem;
+    position: relative;
+    font-size: 14;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input[type="text"], input_box{
+    /* position: relative; */
+    /* top: px; */
+    /* left: 50px; */
+    margin-top: 100px;
+    /* margin-left: 5px; */
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #2C2C2C;
+    border: none;
+    /* padding: 20px; */
+    width: 100%;
+    resize: none;
+    font-size: 18px;
+}
+
+input[type="text"]:focus {
+    border: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FFCB9A;
+    opacity: 1; /* Firefox */
+  }
+
+input[type="submit"] {
+    display: none;
+    /* position: absolute;
+    top: 75px;
+    left: 250px;
+    padding: 10px; 
+    background: #2C2C2C; 
+    border: none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;  */
+}
+
+
+.msg {
+    margin-top: 250px;
+    margin-left: 200px;
+    margin-right: auto;
+    margin-bottom: auto;
+    background-color: #2C2C2C;
+    border: none;
+    color:#FFCB9A;
+    max-width: 24rem;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 3em;
+    position: relative;
+}
+
+.embed {
+    border-radius: 2px;
+}
+
+/* .iframe {
+    border-radius: 200px;
+    border: 0px solid #2C2C2C;
+    border-radius: 0px;
+} */
+
+.row {
+    /* display: inline-flex; */
+    display: flex;
+}
+
+.column {
+    /* display: flex; */
+    margin-left: 25px;
+    margin-right: 10px;
+    /* margin-top: 250px; */
+    width: 497px;
+}

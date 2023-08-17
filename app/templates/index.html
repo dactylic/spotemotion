@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SpotEmotion</title>
+        <link rel="stylesheet" href="/static/style.css"
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="/input">SpotEmotion</a>
+            <a href="/about">About</a> 
+            <a href="/how-it-works">How It Works</a>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <div class="input_box">
+                    <form action="/input/" method="post">
+                        <input type="text" name="anything" placeholder="Enter playlist URI or URL" id="anything">
+                        <input type="submit" value="submit" id="submit">
+                    </form>
+                </div>
+                    <iframe src="{{ src }}" style="border-radius: 0px" width="500px" height="500px" frameBorder="0" loading="lazy"></iframe>
+            </div>
+            <center>
+                <div class="msg">{{ description }}</div>
+            </center>
+        </div>
+    </body>
+</html>
