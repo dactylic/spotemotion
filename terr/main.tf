@@ -126,7 +126,7 @@ resource "aws_lb_listener" "listener" {
   port                = 443
   protocol            = "HTTPS"
   ssl_policy          = "ELBSecurityPolicy-2016-08"
-  certificate_arn     = "arn:aws:acm:us-east-1:300555305453:certificate/55f22999-8ab4-49a1-a8b6-cee5ab7cc9ae"
+  certificate_arn     = var.certificate_arn
   default_action {
     type              = "forward"
     target_group_arn  = "${aws_lb_target_group.target_group.arn}"
@@ -149,7 +149,7 @@ resource "aws_route53_zone" "zone" {
 
 resource "aws_lb_listener_certificate" "listener_certificate" {
   listener_arn    = "${aws_lb_listener.listener.arn}"
-  certificate_arn = "arn:aws:acm:us-east-1:300555305453:certificate/55f22999-8ab4-49a1-a8b6-cee5ab7cc9ae"
+  certificate_arn = var.certificate_arn
 }
 
 
